@@ -1,14 +1,20 @@
-# server-SpringBootRestApiMySQL
+# front-end
 
-O servidor foi implementado na linguagem java com Spring Boot que é baseada no Spring e para o armazenamento de dados foi utilizado o servidor MySQL na versão 8. O arquivo "db1-backup-2019-05-13.sql" contém o script para a criação do banco de dados.
+As páginas da aplicação foi feito utilizando o Angular na versão 8 e para template de estilização das páginas foi utilizado o Material Design.
 
-Para executar o servidor spring boot deverão ser executadas as seguintes etapas:
+Para executar o Angular basta instalar as dependências com o comando "npm install" e após a instalação das dependências utilizar o comando "ng serve" para executar o frontend da aplicação sendo o mesmo exibido no link "http://localhost:4200". 
+
+# back-end
+
+O servidor foi implementado na linguagem java com o framework Spring Boot que é baseada no Spring e para o armazenamento de dados foi utilizado o servidor MySQL na versão 8. O arquivo "db-backup-25-02-2020.sql" contém o script para a criação do banco de dados e alguns dados salvos.
+
+Para executar o servidor deverão ser executadas os seguintes passos:
 
 # baixar o arquivo do servidor no repositorio do git com o seguinte comando:
-git clone (https://github.com/Miler1/server-SpringBootRestApiMySQL.git)
+git clone (https://github.com/Miler1/leaftlet-project.git)
 
 após baixar o arquivo entrar dentro da pasta do repositório com o comando:
-cd "SpringBootRestApiMySQL"
+cd "leaftlet"
 
 dentro da pasta executar o comando:
 "mvn spring-boot:run"
