@@ -14,7 +14,7 @@ Para executar o servidor deverão ser executadas os seguintes passos:
 git clone (https://github.com/Miler1/leaftlet-project.git)
 
 após baixar o arquivo entrar dentro da pasta do repositório com o comando:
-cd "leaftlet"
+cd "pasta do projeto"
 
 dentro da pasta executar o comando:
 "mvn spring-boot:run"
