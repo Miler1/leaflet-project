@@ -11,7 +11,7 @@ O servidor foi implementado na linguagem java com o framework Spring Boot que é
 Para executar o servidor deverão ser executadas os seguintes passos:
 
 # pelo terminal:
-após baixar o projeto pelo comando git clone (https://github.com/Miler1/leaftlet-project.git) entrar dentro da pasta back-end e executar o comando:
+após baixar o projeto pelo comando git clone (https://github.com/Miler1/leaflet-project.git) entrar dentro da pasta back-end e executar o comando:
 
 "mvn spring-boot:run"
 
