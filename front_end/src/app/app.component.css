@@ -1,0 +1,58 @@
+mat-sidenav {
+    background-image: linear-gradient(#1A2980, #26D0CE);
+    /* width: 220px; */
+}
+
+.toolbar {
+    background-image: linear-gradient(127deg, #1A2980, #26D0CE) !important;
+    /* width: 220px; */
+}
+
+a.mat-list-item {
+    color: #fff;
+}
+
+.menu-spacer {
+    flex: 1 1 auto;
+  }
+
+section {
+    background-color: #e5e6f0;
+}
+
+/* button.mat-raised-button.mat-button-base  {
+    margin: 10px;
+    width: 200px;
+    background-image: linear-gradient(#0066ff, #0047b3, blue);
+    color: #fff;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+button.mat-raised-button.mat-button-base:hover {
+    background: #e5e6f0;
+    color: #000;
+    border: 2px;
+    box-shadow: #000;
+    border-radius: 4px;
+} */
+
+.sidemenu {
+    cursor: pointer;
+} 
+
+body {
+    background: #e5e6f0;
+    -webkit-font-smoothing: antialiased; /*font mais legível*/
+}
+
+.mat-card-header {
+    display: inline;
+}
+
+.example-card {
+    max-width: 800px;
+    text-align: justify;
+}

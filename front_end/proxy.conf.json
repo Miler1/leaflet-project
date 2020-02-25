@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "https://aw-springboot-restapi-postgres.herokuapp.com/api/pessoas",
+      "secure": false,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }

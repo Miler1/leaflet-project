@@ -1,0 +1,48 @@
+<!-- Modal de Edição de Pessoa -->
+<h2 mat-dialog-title>{{description}}</h2>
+
+<mat-dialog-content>
+    <form class="example-form" [formGroup]="form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Informe seu nome" id="nome" name="nome" required formControlName="nome">
+            <mat-error *ngIf="hasError('nome', 'required')">Name is required</mat-error>
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+            <mat-label>CPF</mat-label>
+            <input [textMask]="{mask: mask}" matInput placeholder="Informe seu CPF" id="cpf" name="cpf" required formControlName="cpf">
+            <mat-error *ngIf="hasError('cpf', 'required')">Cpf is required</mat-error>
+            <mat-error *ngIf="hasError('cpf', 'maxlength')">You have more than 14 characters</mat-error>
+        </mat-form-field>
+                    
+        <mat-form-field class="example-full-width">
+            <mat-label>Data de Nascimento</mat-label>
+            <input readonly matInput [matDatepicker]="myDatepicker" name="dataNascimento" id="dataNascimento" formControlName="dataNascimento">
+            <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+            <mat-datepicker #myDatepicker></mat-datepicker>
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+            <mat-label>Peso</mat-label>
+            <input type="number" matInput placeholder="Informe seu peso" id="peso" name="peso" formControlName="peso">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Estado</mat-label>
+            <mat-select required name="uf" id="uf" (ngModelChange)="onGetUF()" formControlName="uf">
+                <mat-option *ngFor="let estado of estados" [value]="estado.sigla">
+                    {{estado.sigla}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="hasError('uf', 'required')">Estado is required</mat-error>
+        </mat-form-field>
+    </form>
+ 
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="close()">Close</button>
+    <button [disabled]="hasError('uf', 'required') || hasError('cpf', 'required') ||
+    hasError('cpf', 'maxlength') || hasError('nome', 'required')" class="mat-raised-button mat-primary" (click)="save(pessoa.id)">Save</button>
+</mat-dialog-actions> 
