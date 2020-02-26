@@ -27,13 +27,17 @@ basta executar o comando:
 
 basta somente importar o projeto pelo eclipse ou qualquer outra IDE com o Java devidamente instalado.
 
+Passo 1:
 
 ![passo 1](https://user-images.githubusercontent.com/34896180/75299727-932cd300-5814-11ea-92de-349c6ef26acd.png)
 
+Passo 2:
+
 ![passo 2](https://user-images.githubusercontent.com/34896180/75299688-78f2f500-5814-11ea-9e0e-a2c3fa0de3d7.png)
 
-![passo 3](https://user-images.githubusercontent.com/34896180/75299707-85774d80-5814-11ea-873a-348d1f558b15.png)
+Passo 3:
 
+![passo 3](https://user-images.githubusercontent.com/34896180/75299707-85774d80-5814-11ea-873a-348d1f558b15.png)
 
 
 Para executar o servidor em modo de produção basta executar os comandos:
