@@ -80,7 +80,7 @@ export class PessoasListComponent implements OnInit, AfterViewInit {
         },
         error => console.log(error));
         Swal.fire(
-          // 'Deletado!',
+          '',
           'Este registro foi deletado com sucesso!',
           'success'
         )
